@@ -1,0 +1,255 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: #14181c;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#backdrop {
+    height: 35rem;
+    width: 100%;
+}
+
+#backdrop img {
+    height: 100%;
+    width: 100%;
+
+    /* Vertical fade (top/bottom) */
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    
+    /* Horizontal fade (left/right) - applied via ::after */
+}
+
+#backdrop img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to right,
+        #14181c 0%,
+        transparent 10%,
+        transparent 90%,
+        #14181c 100%
+    );
+}
+
+#details {
+    display: flex;
+    margin: 1rem 10rem 0rem 10rem;
+    gap: 3rem;
+    /* border: 1px solid #9ab; */
+    position: relative;
+    transform: translateY(-5rem);
+}
+
+#details img {
+    height: 18rem;
+    width: 10rem;
+    border: 1px solid #9ab;
+    border-radius: 5px;
+}
+
+#details article:first-of-type {
+    height: 18rem;
+    width: 30rem;
+    /* border: 1px solid #9ab; */
+    position: relative;
+}
+
+#details article:first-of-type h1 {
+    color: #9ab;
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#details article:first-of-type div {
+    display: flex;
+}
+
+#details article:first-of-type div h4, h5 {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0rem 0.5rem 0rem 0.2rem;
+}
+
+#details article:first-of-type h6 {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2rem 0.3rem 0.3rem 0.3rem;
+}
+
+#details article:first-of-type p {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.3rem;
+    height: 6.5rem;
+    /* border: 1px solid #9ab; */
+}
+
+#details article:first-of-type button {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0rem;
+}
+
+#details article:first-of-type button:hover {
+    transform: scale(1.05);
+    font-weight: 400;
+}
+
+#details article:last-of-type {
+    margin-top: auto;
+    width: 10rem;
+    border: 1px solid #9ab;
+    border-radius: 5px;
+    background-color: #222b3399;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#details article:last-of-type h2 {
+    color: #9ab;
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.3rem;
+    display: flex;
+    line-height: 1.2rem;
+}
+
+#details article:last-of-type h2 p {
+    color: #9ab;
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0rem 0rem 0rem 0.5rem;
+    line-height: 1.2rem;
+}
+
+#buttons {
+    margin: 0rem 10rem 0rem 10rem;
+    /* border: 1px solid #9ab; */
+    transform: translateY(-5rem);
+}
+
+#buttons button {
+    background-color: #222b3399;
+    color: #9ab;
+    font-size: 0.6rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 4.9rem;
+    border: 1px solid #9ab;
+    border-radius: 3px;
+    padding: 0.2rem;
+    margin: 0.5rem 0rem 0rem 0rem;
+    cursor: pointer;
+    transition: all 0.2s ease;    
+}  
+
+#buttons button:hover {
+    transform: scale(0.9);
+}
+
+.added {
+    background-color: #ffffff !important;
+    color: rgb(4, 127, 251) !important;
+    font-weight: 500 !important;
+}
+
+.extra_details {
+    margin: 0rem 10rem 0rem 10rem;
+    /* border: 1px solid #9ab; */
+}
+
+.extra_details h1 {
+    color: #9ab;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.5rem;
+}
+
+.extra_details hr {
+    border: 1px solid #9ab;
+}
+
+.extra_details article {
+    /* border: 1px solid #9ab; */
+    margin-top: 1rem;
+    height: 12rem;
+    width: 60rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.extra_details article::-webkit-scrollbar {
+    display: none;
+}
+
+.extra_details article div {
+    height: 11rem;
+    width: 8rem;
+    border: 1px solid #9ab;
+    border-radius: 5px;
+    background-color: #222b3399;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.extra_details article div:hover {
+    transform: scale(0.9);
+}
+
+.extra_details article div img {
+    height: 8rem;
+    width: inherit;
+    margin: 0rem 2rem 0rem 0rem;
+}
+
+.extra_details article div h6 {
+    color: #9ab;
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 2rem;
+    width: inherit;
+    overflow: hidden;
+}
+
+footer {
+    height: 2.5rem;
+}

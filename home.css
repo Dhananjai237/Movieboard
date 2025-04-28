@@ -1,0 +1,177 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-color: #14181c;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#mobile {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.welcome {
+    background: linear-gradient(#222b3399, #14181c);
+    height: 15rem;
+}
+
+.welcome h1 {
+    color: #9ab;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.welcome p {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+#recommended {
+    margin: 1rem 10rem 4rem 10rem;
+}
+
+#recommended h2 {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 0rem 0.4rem 0rem;
+}
+
+#recommended hr {
+    border: 1px solid #9ab;
+}
+
+.article_space {
+    width: 60rem;
+    overflow-x: hidden;
+    display: flex;
+    gap: 1.25rem;
+    
+}
+
+.article_space::-webkit-scrollbar {
+    display: none;
+}
+
+.article_space div {
+    width: 11rem;
+}
+
+.movie {
+    height: 18rem;
+    width: 11rem;
+    border: 1px solid #9ab;
+    border-radius: 5px;
+    margin: 1rem 0rem 0rem 0rem;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.movie:hover {
+    transform: scale(0.9);
+    border: 3px solid #9ab;
+} 
+
+.caption {
+    color: #9ab;
+    font-size: 0.8rem;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.block {
+    margin: 1rem 7rem 4rem 7rem;
+}
+
+.block h2 {
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0rem 3rem 0.4rem 3rem;
+}
+
+.block hr {
+    border: 1px solid #9ab;
+    margin: 0rem 3rem 0rem 3rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.container button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #9ab;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s ease;
+}
+
+.container button:hover {
+    transform: scale(1.2);
+    font-weight: 400;
+}
+
+.title_caption {
+    color: #9ab;
+    font-size: 0.8rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 0.3rem 0rem 0rem 0rem;
+}
+
+footer {
+    display: flex;
+    border: 1px solid #1a1a1a;
+    background-color: #0d0d0d;
+}
+
+footer h3 {
+    color: #9ab;
+    padding: 2rem 25rem 2rem 10rem;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer a {
+    color: #9ab;
+    text-decoration: none;
+    padding: 2rem;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a i {
+    padding-left: 0.5rem;
+}
