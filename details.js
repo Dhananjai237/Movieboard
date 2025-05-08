@@ -393,7 +393,7 @@ let add_movie = function(state, button) {
             })
     }
     else {
-        window.location.href = "../Login Page/Login.html"
+        window.location.href = "login.html"
     };
 };
 
@@ -428,7 +428,7 @@ let delete_movie = function(state, button) {
             })
     }
     else {
-        window.location.href = "../Login Page/Login.html"
+        window.location.href = "login.html"
     };
 }
 
