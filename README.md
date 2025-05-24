@@ -86,9 +86,9 @@ A movie discovery platform with TMDB API integration
        1. Local Storage is cleared on Logout to avoid unauthorized access.
        2. Redirection to login page if session user_id is not found
 12. Server Response: 
-       1. Connecting to Database:
+       1. Connecting to Database
               1. Uses mysql.connector to connect with database
-              1. Sends response 500, if connection fails.
+              2. Sends response 500, if connection fails.
        2. Signup: Used in Login Page
               1. Path = '/signup'
               2. Server gets signup details from site and stores data in users table. Sends response 200. Also sends user_id.
@@ -138,7 +138,7 @@ A movie discovery platform with TMDB API integration
        9. Show Watchlist: http://localhost:8001/watchlisted
 14. Security:
        1. Hashed Password: Used bcrypt passwords for hashed passwords. And these hashed passwords are stored in database.
-       2. Preventing SQL Injection: Used Query parameter(s%s placeholders) instead of direct variables.
+       2. Preventing SQL Injection: Used Query parameter(%s placeholders) instead of direct variables.
 15. Services by Website:
        1. Allows users to explore a wide range of films.
        2. Home, Films, and Details pages are accessible without login.

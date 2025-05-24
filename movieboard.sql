@@ -1,0 +1,14 @@
+CREATE DATABASE MOVIEBOARD;
+SHOW DATABASES;
+USE MOVIEBOARD;
+CREATE TABLE USERS(
+	USER_ID INTEGER AUTO_INCREMENT PRIMARY KEY, 
+    EMAIL VARCHAR(30) NOT NULL UNIQUE, 
+    USER_NAME VARCHAR(30) NOT NULL, 
+    USER_PASSWORD varchar(255) NOT NULL 
+    );
+DESC USERS;
+select * from users;
+drop database movieboard;
+drop table users;
+truncate table users;
